@@ -1,0 +1,458 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  font-family: OpenSans, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+}
+.header {
+  background-image: url("./img/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: inherit;
+  background-color: #000;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 0;
+  padding: 30px 0;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: -1;
+}
+.menu,
+.logo-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  margin: 0;
+  box-sizing: border-box;
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu-list-item:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.menu-list-item:not(:first-child) {
+  margin-left: 37.9px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+}
+.welcome-title {
+  display: block;
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+  padding: 105px 0;
+  cursor: default;
+}
+.page {
+  margin-top: 60px;
+  max-width: 2900px;
+  max-height: 3500px;
+}
+
+.page-wrapper {
+  width: 1330px;
+  margin: auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  justify-content: space-between;
+}
+.news {
+  margin-bottom: 55px;
+}
+
+.news-img,
+.new-img {
+  display: block;
+}
+.news-tag {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.news-tag-item {
+  margin-right: 20px;
+}
+
+.news-tag-link {
+  text-decoration: none;
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #b59f5b;
+  font-size: 15px;
+}
+.news-tag-link:hover {
+  color: b59f5b;
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: #0f0d0e;
+}
+.news-link:hover {
+  color: #b59f5b;
+}
+.news-name {
+  font-family: "OpenSans", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.2;
+  max-width: 330px;
+  max-height: 210px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+
+.date {
+  color: #888888;
+  font-size: 12px;
+  margin-right: 10px;
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  cursor: default;
+}
+
+.author {
+  font-family: OpenSans, sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 12px;
+}
+.about {
+  margin-top: 10px;
+  width: 370px;
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  padding: 30px 0;
+  cursor: default;
+}
+.about > p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+.about > p:not(:first-child) {
+  margin-top: 0px;
+}
+.news-text {
+  margin-left: 30px;
+}
+.news,
+.new {
+  display: flex;
+}
+/*Первый блог*/
+article.“news” {
+  display: flex;
+  margin: 63.9px 0;
+}
+
+.new-name {
+  font-family: OpenSans, sans-serif;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.aside-item:not(:first-child) {
+  margin-top: 60px;
+}
+.aside {
+  width: 270px;
+}
+.top {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: OpenSans, sans-serif;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.3;
+  cursor: default;
+}
+.top::after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+.new-text a {
+  text-decoration: none;
+  color: #000;
+}
+.new-text a:hover {
+  color: #b59f5b;
+}
+.new-text .date {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.54;
+}
+.new-text {
+  margin-left: 20px;
+}
+.new {
+  margin-top: 20px;
+}
+.search {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+}
+.hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+.search-button {
+  border: none;
+  width: 47px;
+  background-image: url(./svg/search.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+  background-color: #b59f5b;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: #000;
+}
+.search-field {
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-right: 18px;
+  width: 222px;
+  height: 47px;
+  font-size: 13px;
+  border: none;
+  background-color: #f4f7f6;
+}
+.search-field:focus {
+  outline: 1px solid #b59f5b;
+}
+.mailing-button {
+  margin-top: 18px;
+  height: 48px;
+  border: none;
+  width: 100%;
+  background-color: #b59f5b;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.mailing-button:hover {
+  background-color: #000;
+}
+.mailing-field {
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 23px;
+  width: 100%;
+  height: 48px;
+  font-size: 13px;
+  border: none;
+  background-color: #f4f7f6;
+}
+.mailing-field:focus {
+  outline: 1px solid #b59f5b;
+}
+.list-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-tags-link {
+  height: 29px;
+  align-items: center;
+  align-content: space-between;
+  text-decoration: none;
+  font-family: OpenSans, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-size: 12px;
+  border: 3px solid #f4f3f1;
+  padding: 7px 11px;
+}
+.list-tags-link:hover {
+  outline: 3px solid #b59f5b;
+}
+
+.list-tags-item {
+  margin-top: 26px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.list-theme {
+  list-style: none;
+}
+
+.list-theme-link {
+  align-items: center;
+  align-content: space-between;
+  text-decoration: none;
+  font-family: OpenSans, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  padding: 0 5px 0 0;
+}
+.list-theme-link:hover {
+  color: #b59f5b;
+}
+.list-theme-item {
+  margin-top: 14px;
+  margin-left: 3px;
+}
+
+.list-theme-item::after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-top: 14px;
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+}
+
+.list-theme-count {
+  display: inline-block;
+  vertical-align: top;
+  color: #b59f5b;
+  font-family: OpenSans, sans-serif;
+  font-style: bold;
+  font-size: 12px;
+}
+.social-icon_dribble {
+  background-image: url(./svg/001-dribbble.svg);
+}
+.social-icon_pinterest {
+  background-image: url(./svg/001-pinterest.svg);
+}
+.social-icon_tumblr {
+  background-image: url(./svg/003-tumblr.svg);
+}
+.footer {
+  margin-top: 60px;
+}
+.footer-address {
+  margin: 20px;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer-wrapper {
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+.social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+  padding: 30px 15px;
+}
+
+.copyright {
+  text-decoration: none;
+  color: #999;
+  font-family: OpenSans, sans-serif;
+  font-style: bold;
+  font-size: 12px;
+  text-align: center;
+  margin: 74px;
+}
+.header-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-height: 450px;
+}
+li {
+  list-style-type: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
