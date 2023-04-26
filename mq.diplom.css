@@ -34,6 +34,7 @@
   z-index: 0;
   margin-bottom: 0;
   padding: 30px 0;
+  width: 100%;
 }
 .header::after {
   content: "";
@@ -87,19 +88,64 @@
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  max-width: 750px;
+  max-width: 75%;
   margin: auto;
-  padding: 105px 0;
+  padding: 10.5%;
   cursor: default;
 }
+.trend_right_now {
+  font-size: 22.5px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 4%;
+}
+.trends {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+}
+
+.trend_img {
+  width: 100%;
+  position: absolute;
+  filter: brightness(40%);
+  z-index: 0;
+  height: 100%;
+}
+.trend {
+  width: 25%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+}
+.trend:nth-child(2) {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.trend:nth-child(3) {
+  margin-right: 4px;
+}
+.news-container {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  font-family: "OpenSans", sans-serif;
+  text-transform: uppercase;
+  border: 3px solid #b59f5b;
+  color: #fff;
+  padding: 5%;
+  margin: 30% 6% 3% 6%;
+}
 .page {
-  margin-top: 60px;
-  max-width: 2900px;
-  max-height: 3500px;
+  margin-top: 4%;
+  max-width: 70vw;
 }
 
 .page-wrapper {
-  width: 1330px;
+  width: 100vw;
   margin: auto;
   padding: 0 15px;
   display: flex;
@@ -110,22 +156,28 @@
   justify-content: space-between;
 }
 .news {
-  margin-bottom: 55px;
+  margin-bottom: 7%;
 }
 
 .news-img,
 .new-img {
   display: block;
 }
+.news-tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 1%;
+}
 .news-tag {
   list-style: none;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 3.5%;
   display: flex;
 }
 
 .news-tag-item {
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 .news-tag-link {
@@ -152,8 +204,8 @@ a {
   text-transform: uppercase;
   font-size: 20px;
   line-height: 1.2;
-  max-width: 330px;
-  max-height: 210px;
+  max-width: 25vw;
+  max-height: 18vh;
   margin-bottom: 25px;
   margin-top: 0px;
 }
@@ -175,7 +227,7 @@ a {
 }
 .about {
   margin-top: 10px;
-  width: 370px;
+  width: 25vw;
   font-family: "OpenSans", sans-serif;
   font-style: normal;
   padding: 30px 0;
@@ -213,7 +265,7 @@ article.“news” {
   margin-top: 60px;
 }
 .aside {
-  width: 270px;
+  width: 18vw;
 }
 .top {
   text-align: center;
@@ -232,7 +284,7 @@ article.“news” {
   margin-left: auto;
   margin-right: auto;
   margin-top: 14px;
-  width: 66px;
+  width: 4vw;
   height: 3px;
   background: #b59f5b;
 }
@@ -283,7 +335,7 @@ article.“news” {
   box-sizing: border-box;
   padding-left: 18px;
   padding-right: 18px;
-  width: 222px;
+  width: 15vw;
   height: 47px;
   font-size: 13px;
   border: none;
@@ -413,8 +465,8 @@ article.“news” {
   justify-content: center;
 }
 .footer-wrapper {
-  width: 1200px;
-  margin: auto;
+  width: 80vw;
+  margin-left: 6%;
   padding: 0 15px;
 }
 .social-icon {
@@ -437,12 +489,13 @@ article.“news” {
   margin: 74px;
 }
 .header-wrapper {
-  max-width: 1200px;
+  max-width: 66%;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  max-height: 450px;
+  max-height: 45%;
 }
+
 li {
   list-style-type: none;
 }
@@ -455,4 +508,80 @@ li {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.products {
+  box-sizing: border-box;
+  width: 90vw;
+  display: flex;
+}
+.product {
+  box-sizing: border-box;
+  display: block;
+  width: 20%;
+  margin-left: 10%;
+}
+.product_title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.product_img {
+  position: relative;
+  z-index: 0;
+  padding: 25px;
+  width: 20vw;
+}
+.product_description {
+  display: block;
+  width: 17vw;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.video_link {
+  text-decoration: none;
+  color: #bfac71;
+  padding-left: 2px;
+}
+.product_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 6%;
+}
+.product_body {
+  width: 100%;
+  border: 3px solid #b59f5b;
+  position: relative;
+  z-index: 1;
+  padding: 23% 17% 17% 10%;
+  margin-top: -66px;
+  height: 35%;
+}
+.product_price-value {
+  display: block;
+}
+.product_price {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+}
+.product_price_old {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.product_button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5% 7%;
+  background-color: #b59f5b;
+  border: 1px solid #b59f5b;
+  z-index: 3;
+  position: absolute;
+  margin-left: 50%;
+}
+h2.top.product_imgbox {
+  width: 100vw;
 }
