@@ -1,13 +1,15 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  src: url("./fonts/OpenSans-Bold.ttf"), ("./fonts/OpenSans-Bold.woff"),
+    ("./fonts/OpenSans-Bold.woff2");
   font-style: bold;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  src: url("./fonts/OpenSans-Regular.ttf"), ("fonts\OpenSans-Regular.woff"),
+    ("fonts\OpenSans-Regular.woff2");
   font-style: normal;
   font-weight: 400;
 }
@@ -23,6 +25,7 @@
   font-size: 16px;
   line-height: 1.2;
   margin: 0;
+  overflow-x: hidden;
 }
 .header {
   background-image: url("./img/banner-bg.jpg");
@@ -120,6 +123,9 @@
   position: relative;
   display: flex;
 }
+.trend_name {
+  color: #fff;
+}
 .trend:nth-child(2) {
   margin-left: 4px;
   margin-right: 4px;
@@ -145,7 +151,8 @@
 }
 
 .page-wrapper {
-  width: 100vw;
+  box-sizing: border-box;
+  width: 90vw;
   margin: auto;
   padding: 0 15px;
   display: flex;
@@ -265,7 +272,7 @@ article.“news” {
   margin-top: 60px;
 }
 .aside {
-  width: 18vw;
+  max-width: 20%;
 }
 .top {
   text-align: center;
@@ -465,7 +472,7 @@ article.“news” {
   justify-content: center;
 }
 .footer-wrapper {
-  width: 80vw;
+  width: 80.5vw;
   margin-left: 6%;
   padding: 0 15px;
 }
@@ -533,8 +540,8 @@ li {
   width: 20vw;
 }
 .product_description {
-  display: block;
-  width: 17vw;
+  display: flex;
+  width: 100%;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -556,7 +563,6 @@ li {
   z-index: 1;
   padding: 23% 17% 17% 10%;
   margin-top: -66px;
-  height: 35%;
 }
 .product_price-value {
   display: block;
@@ -579,9 +585,7 @@ li {
   background-color: #b59f5b;
   border: 1px solid #b59f5b;
   z-index: 3;
-  position: absolute;
-  margin-left: 50%;
 }
 h2.top.product_imgbox {
-  width: 100vw;
+  width: 95vw;
 }
