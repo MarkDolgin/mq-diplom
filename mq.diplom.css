@@ -633,7 +633,7 @@ h2.top.product_imgbox {
   .hamburger {
     position: absolute;
     top: 4em;
-    right: 3.5%;
+    right: 13.5%;
     margin-top: -45px;
     width: 2em;
     z-index: 5;
@@ -871,4 +871,133 @@ h2.top.product_imgbox {
     min-height: 15.5vh;
     padding: 18% 0% 4% 6%;
   }
+}
+
+/*Pop-up*/
+.pop-up_form {
+  width: 18vw;
+  height: 63vh;
+  padding: 35px;
+  border: 1px solid #cbd1d4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+
+.pop-up_title {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: OpenSans, sans-serif;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.3;
+  cursor: default;
+}
+.pop-up_title::after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  width: 6vw;
+  height: 3px;
+  background: #b59f5b;
+}
+.form-group {
+  margin-bottom: 12%;
+}
+.pop-up_title {
+  margin-bottom: 8%;
+  margin-top: -1%;
+}
+.select {
+  width: 100%;
+  padding: 10px;
+}
+.select {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/svg/form-arrows.svg");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  padding-left: 10px;
+  padding-right: 25px;
+  margin: 0;
+  border: none;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: grey;
+  background-color: #f4f7f6;
+  margin-top: 2%;
+}
+input.checkbox {
+  display: none;
+}
+.circle_svg {
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+.pop-up_form {
+  font-size: 14px;
+}
+input#new_content {
+  width: 100%;
+  margin-top: 2%;
+  border: none;
+  background-color: #f4f7f6;
+  padding-bottom: 21%;
+}
+.button_pop-up {
+  width: 100%;
+  padding: 10px;
+  background-color: #b59f5b;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.button_pop-up:hover {
+  cursor: pointer;
+}
+.pop-up_close {
+  position: relative;
+  bottom: 41%;
+  left: 110%;
+}
+@media screen and (max-width: 640px) {
+  .pop-up_form {
+    width: 72vw;
+    height: 70vh;
+    margin-top: 12%;
+  }
+  .pop-up_close {
+    bottom: 31.5%;
+    left: 102.5%;
+    width: 25px;
+    height: 25px;
+  }
+  .form-group {
+    margin-bottom: 17%;
+  }
+  .pop-up_form {
+    font-size: 18px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
