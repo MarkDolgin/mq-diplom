@@ -532,6 +532,7 @@ li {
 .product_title {
   text-transform: uppercase;
   font-size: 20px;
+  font-family: OpenSans, sans-serif;
   font-weight: 700;
   font-family: sans-serif;
 }
@@ -543,6 +544,7 @@ li {
   object-fit: cover;
 }
 .product_description {
+  font-family: OpenSans, sans-serif;
   display: flex;
   width: 100%;
   font-size: 15px;
@@ -575,12 +577,15 @@ li {
   display: flex;
   font-size: 20px;
   font-weight: 700;
+  font-family: OpenSans, sans-serif;
 }
 .product_price_old {
   text-decoration: line-through;
   font-size: 14px;
+  font-family: OpenSans, sans-serif;
 }
 .product_button {
+  font-family: OpenSans, sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -775,6 +780,11 @@ h2.top.product_imgbox {
   .product_button {
     margin-right: 7%;
   }
+  @media (orientation: landscape) {
+    .trend {
+      width: 24.5%;
+    }
+  }
 }
 
 /* Style for mobile versions*/
@@ -819,8 +829,8 @@ h2.top.product_imgbox {
     margin: 6% 0;
   }
   .news-container {
-    margin: 31vh 6% 0% 6%;
-    height: 8vh;
+    margin: 27vh 6% 0% 6%;
+    height: 12vh;
   }
   .page-wrapper {
     display: flex;
@@ -871,17 +881,33 @@ h2.top.product_imgbox {
     min-height: 15.5vh;
     padding: 18% 0% 4% 6%;
   }
-}
 
+  @media (orientation: landscape) {
+    .trend {
+      width: 49%;
+      margin: 0px 4px 4px 0px;
+    }
+    .trend:nth-child(3) {
+      margin: 0px 4px 0px 0px;
+    }
+    .news-container {
+      margin: 18vh 6% 1% 6%;
+      height: 22vh;
+    }
+  }
+}
 /*Pop-up*/
 .pop-up_form {
-  width: 18vw;
-  height: 63vh;
+  width: 22vw;
+  height: 70vh;
+  font-size: 14px;
+  font-family: OpenSans, sans-serif;
   padding: 35px;
   border: 1px solid #cbd1d4;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 12%;
   margin-top: 7%;
+  position: relative;
 }
 
 .pop-up_title {
@@ -906,7 +932,7 @@ h2.top.product_imgbox {
   background: #b59f5b;
 }
 .form-group {
-  margin-bottom: 12%;
+  margin-bottom: 5vh;
 }
 .pop-up_title {
   margin-bottom: 8%;
@@ -932,10 +958,11 @@ h2.top.product_imgbox {
   margin: 0;
   border: none;
   font-size: 13px;
-  font-family: Arial, sans-serif;
+  font-family: OpenSans, sans-serif;
   color: grey;
   background-color: #f4f7f6;
   margin-top: 2%;
+  margin-bottom: -3%;
 }
 input.checkbox {
   display: none;
@@ -944,16 +971,12 @@ input.checkbox {
   margin-top: 3%;
   font-size: 14px;
 }
-
-.pop-up_form {
-  font-size: 14px;
-}
 input#new_content {
   width: 100%;
   margin-top: 2%;
   border: none;
   background-color: #f4f7f6;
-  padding-bottom: 21%;
+  padding-bottom: 40%;
 }
 .button_pop-up {
   width: 100%;
@@ -963,41 +986,33 @@ input#new_content {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: OpenSans, sans-serif;
 }
 .button_pop-up:hover {
   cursor: pointer;
 }
+
 .pop-up_close {
   position: relative;
-  bottom: 41%;
-  left: 110%;
+  bottom: 42.5%;
+  left: 103.5%;
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 641px;), (max-width: 1200px) {
+  .pop-up_form {
+    width: 40vw;
+    height: 79vh;
+  }
+  .pop-up_close {
+    bottom: 39%;
+  }
 }
 @media screen and (max-width: 640px) {
   .pop-up_form {
-    width: 72vw;
-    height: 70vh;
-    margin-top: 12%;
+    min-width: 70vw;
+    min-height: 75vh;
+    margin-left: 8.5%;
   }
-  .pop-up_close {
-    bottom: 31.5%;
-    left: 102.5%;
-    width: 25px;
-    height: 25px;
-  }
-  .form-group {
-    margin-bottom: 17%;
-  }
-  .pop-up_form {
-    font-size: 18px;
-  }
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
