@@ -603,7 +603,7 @@ h2.top.product_imgbox {
 }
 
 /*Для планшета*/
-@media (min-width: 641px;), (max-width: 1200px) {
+@media (min-width: 641px), (max-width: 1200px) {
   .header {
     background-image: url("./img/banner-bg-tablet.jpg");
     background-repeat: no-repeat;
@@ -780,12 +780,20 @@ h2.top.product_imgbox {
   .product_button {
     margin-right: 7%;
   }
-  @media (orientation: landscape) {
+   .pop-up_form {
+    width: 40vw;
+    height: 79vh;
+  }
+  .pop-up_close {
+    bottom: 39%;
+  }
+}
+}
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
     .trend {
       width: 24.5%;
     }
   }
-}
 
 /* Style for mobile versions*/
 @media screen and (max-width: 640px) {
@@ -881,8 +889,14 @@ h2.top.product_imgbox {
     min-height: 15.5vh;
     padding: 18% 0% 4% 6%;
   }
+  .pop-up_form {
+    min-width: 70vw;
+    min-height: 75vh;
+    margin-left: 8.5%;
+  }
+}
 
-  @media (orientation: landscape) {
+  @media (max-width: 640px) and (orientation: landscape) {
     .trend {
       width: 49%;
       margin: 0px 4px 4px 0px;
@@ -1000,19 +1014,3 @@ input#new_content {
   height: 25px;
 }
 
-@media (min-width: 641px;), (max-width: 1200px) {
-  .pop-up_form {
-    width: 40vw;
-    height: 79vh;
-  }
-  .pop-up_close {
-    bottom: 39%;
-  }
-}
-@media screen and (max-width: 640px) {
-  .pop-up_form {
-    min-width: 70vw;
-    min-height: 75vh;
-    margin-left: 8.5%;
-  }
-}
