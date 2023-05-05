@@ -635,86 +635,6 @@ h2.top.product_imgbox {
     max-width: 100%;
   }
 
-  .hamburger {
-    position: absolute;
-    top: 4em;
-    right: 13.5%;
-    margin-top: -45px;
-    width: 2em;
-    z-index: 5;
-  }
-
-  .hamburger div {
-    position: relative;
-    width: 3em;
-    height: 5px;
-    border-radius: 3px;
-    background-color: #fff;
-    margin-top: 8px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .menu-link {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    transform: scale(0);
-  }
-  .menu-list {
-    position: relative;
-    overflow: hidden;
-    overflow-y: auto;
-    display: block;
-  }
-  nav {
-    text-align: left;
-    margin-left: 80%;
-    margin-top: 10%;
-  }
-  nav a {
-    position: relative;
-    text-decoration: none;
-    color: #6ecddd;
-    font-size: 14px;
-    display: inline-block;
-    margin-top: 1.25em;
-    transition: color 0.2s ease-in-out;
-    letter-spacing: 1px;
-  }
-  nav a:before {
-    content: "";
-    height: 0;
-    position: absolute;
-    width: 0.25em;
-    background-color: white;
-    left: -0.5em;
-    transition: all 0.2s ease-in-out;
-  }
-  nav a:hover {
-    color: white;
-  }
-
-  #toggle:checked + .hamburger .top-bun {
-    transform: rotate(-45deg);
-    margin-top: 25px;
-  }
-  #toggle:checked + .hamburger .bottom-bun {
-    opacity: 0;
-    transform: rotate(45deg);
-  }
-  #toggle:checked + .hamburger .meat {
-    transform: rotate(45deg);
-    margin-top: -7px;
-  }
-
-  #toggle:checked + .hamburger + .menu-link {
-    top: 0;
-    transform: scale(1);
-  }
-
   .trends {
     display: flex;
     flex-wrap: wrap;
@@ -793,7 +713,6 @@ h2.top.product_imgbox {
     width: 24.5%;
   }
 }
-
 /* Style for mobile versions*/
 @media screen and (max-width: 640px) {
   .header {
@@ -816,13 +735,23 @@ h2.top.product_imgbox {
     opacity: 0.6;
     z-index: -1;
   }
+  .header-wrapper {
+    max-width: 100%;
+  }
+  .welcome-title {
+    font-size: 24px;
+    max-width: 100%;
+  }
   .menu,
   .logo-link {
     justify-content: center;
-    margin-top: 16%;
+    margin-top: 30%;
   }
   .header-logo {
     width: 75vw;
+  }
+  .trends {
+    display: block;
   }
   .trend {
     width: 100%;
@@ -832,9 +761,7 @@ h2.top.product_imgbox {
   .trend:nth-child(n + 2) {
     margin: 0 0 4px 0;
   }
-  .trend_name {
-    margin: 6% 0;
-  }
+
   .news-container {
     margin: 27vh 6% 0% 6%;
     height: 12vh;
@@ -847,13 +774,22 @@ h2.top.product_imgbox {
     width: 89vw;
   }
   .news-name {
-    max-width: 78vw;
+    max-width: 90vw;
   }
   .page-wrapper {
     width: 100vw;
   }
+  .news-text {
+    margin-left: auto;
+  }
+  .news {
+    display: block;
+  }
+  .news-tag {
+    margin-top: 3%;
+  }
   .about > p {
-    width: 59.5vw;
+    width: 89.5vw;
   }
   .aside {
     max-width: 90vw;
@@ -866,7 +802,7 @@ h2.top.product_imgbox {
     width: 90vw;
   }
   .new {
-    width: 74.2vw;
+    width: 88.2vw;
   }
   .search-field {
     width: 77vw;
@@ -877,6 +813,10 @@ h2.top.product_imgbox {
   .top::after {
     width: 18vw;
   }
+  .products {
+    display: block;
+    margin-left: -8%;
+  }
   .product {
     width: 95%;
   }
@@ -886,7 +826,7 @@ h2.top.product_imgbox {
   .product_body {
     margin-top: -20%;
     min-height: 15.5vh;
-    padding: 18% 0% 4% 6%;
+    padding: 18% 4% 4% 6%;
   }
   .pop-up_form {
     min-width: 70vw;
@@ -894,7 +834,12 @@ h2.top.product_imgbox {
     margin-left: 8.5%;
   }
 }
-@media (orientation: landscape) and (max-width: 640px) {
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+  .trends {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
   .trend {
     width: 49%;
     margin: 0px 4px 4px 0px;
@@ -1010,4 +955,85 @@ input#new_content {
   left: 103.5%;
   width: 25px;
   height: 25px;
+}
+@media (max-width: 1200px) {
+  .hamburger {
+    position: absolute;
+    top: 4em;
+    right: 13.5%;
+    margin-top: -45px;
+    width: 2em;
+    z-index: 5;
+  }
+
+  .hamburger div {
+    position: relative;
+    width: 3em;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-link {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  .menu-list {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+  }
+  nav {
+    text-align: left;
+    margin-left: 80%;
+    margin-top: 10%;
+  }
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #6ecddd;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+  }
+  nav a:before {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  nav a:hover {
+    color: white;
+  }
+
+  #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+
+  #toggle:checked + .hamburger + .menu-link {
+    top: 0;
+    transform: scale(1);
+  }
 }
