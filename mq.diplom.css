@@ -603,7 +603,7 @@ h2.top.product_imgbox {
 }
 
 /*Для планшета*/
-@media (min-width: 641px;), (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1200px) {
   .header {
     background-image: url("./img/banner-bg-tablet.jpg");
     background-repeat: no-repeat;
@@ -786,6 +786,11 @@ h2.top.product_imgbox {
   }
   .pop-up_close {
     bottom: 39%;
+  }
+}
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trend {
+    width: 24.5%;
   }
 }
 
