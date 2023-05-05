@@ -789,7 +789,7 @@ h2.top.product_imgbox {
   }
 }
 }
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px)  {
     .trend {
       width: 24.5%;
     }
@@ -896,7 +896,7 @@ h2.top.product_imgbox {
   }
 }
 
-  @media (max-width: 640px) and (orientation: landscape) {
+  @media (orientation: landscape) , (max-width: 640px) {
     .trend {
       width: 49%;
       margin: 0px 4px 4px 0px;
