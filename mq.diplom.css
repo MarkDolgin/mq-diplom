@@ -58,7 +58,9 @@
   align-items: center;
   max-width: 1200px;
 }
-
+.pop-up_visually{
+  display: none;
+}
 .header-menu {
   margin: 0;
   box-sizing: border-box;
