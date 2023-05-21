@@ -340,7 +340,7 @@ article.“news” {
 }
 .search-button {
   border: none;
-  min-width: 40px;
+  min-width: 55px;
   background-image: url(./svg/search.svg);
   background-repeat: no-repeat;
   background-size: 16px;
@@ -355,7 +355,7 @@ article.“news” {
   box-sizing: border-box;
   padding-left: 18px;
   padding-right: 18px;
-  width: 15vw;
+  width: 17vw;
   height: 47px;
   font-size: 13px;
   border: none;
