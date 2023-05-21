@@ -355,7 +355,7 @@ article.“news” {
   box-sizing: border-box;
   padding-left: 18px;
   padding-right: 18px;
-  width: 17vw;
+  min-width: 16vw;
   height: 47px;
   font-size: 13px;
   border: none;
