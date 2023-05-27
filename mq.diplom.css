@@ -18,6 +18,9 @@
   padding: 0;
   margin: 0;
 }
+#menu__toggle {
+  opacity: 0;
+}
 
 .body {
   font-family: OpenSans, sans-serif;
@@ -654,14 +657,6 @@ h2.top.product_imgbox {
   .header-wrapper {
     max-width: 100%;
   }
-  .hamburger div {
-    width: 3em;
-    height: 5px;
-    margin-top: 8px;
-  }
-  .hamburger {
-    right: 4.5%;
-  }
   .logo-link {
     margin-left: 5%;
   }
@@ -795,18 +790,13 @@ h2.top.product_imgbox {
   .header-wrapper {
     max-width: 100%;
   }
+  .menu__btn {
+    margin-left: -2%;
+  }
   .welcome-title {
     font-size: 26px;
     min-width: 81vw;
     margin-left: -5%;
-  }
-  .hamburger div {
-    width: 24px;
-    height: 4px;
-    margin-top: 7px;
-  }
-  .hamburger {
-    right: 0.5%;
   }
   .top {
     font-size: 16px;
@@ -1057,19 +1047,47 @@ input#new_content {
 }
 
 @media (max-width: 1200px) {
-  .hamburger {
-    position: absolute;
-    top: 4em;
-    margin-top: -45px;
-    width: 2em;
-    z-index: 5;
-  }
-
-  .hamburger div {
-    position: relative;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 94%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
 
   .menu-link {
     position: fixed;
@@ -1085,51 +1103,6 @@ input#new_content {
     overflow: hidden;
     overflow-y: auto;
     display: block;
-  }
-  nav {
-    text-align: left;
-    margin-left: 80%;
-    margin-top: 10%;
-  }
-  nav a {
-    position: relative;
-    text-decoration: none;
-    color: #6ecddd;
-    font-size: 14px;
-    display: inline-block;
-    margin-top: 1.25em;
-    transition: color 0.2s ease-in-out;
-    letter-spacing: 1px;
-  }
-  nav a:before {
-    content: "";
-    height: 0;
-    position: absolute;
-    width: 0.25em;
-    background-color: white;
-    left: -0.5em;
-    transition: all 0.2s ease-in-out;
-  }
-  nav a:hover {
-    color: white;
-  }
-
-  #toggle:checked + .hamburger .top-bun {
-    transform: rotate(-45deg);
-    margin-top: 25px;
-  }
-  #toggle:checked + .hamburger .bottom-bun {
-    opacity: 0;
-    transform: rotate(45deg);
-  }
-  #toggle:checked + .hamburger .meat {
-    transform: rotate(45deg);
-    margin-top: -7px;
-  }
-
-  #toggle:checked + .hamburger + .menu-link {
-    top: 0;
-    transform: scale(1);
   }
 }
 
