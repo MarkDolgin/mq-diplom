@@ -1021,9 +1021,12 @@ input#new_content {
   width: 100%;
   margin-top: 2%;
   border: none;
-  background-color: #f4f7f6;
+  background-color: #b59f5b;
   padding-bottom: 40%;
 }
+input#new_content:focus {
+  border: 1px solid #f4f7f6;
+
 .button_pop-up {
   width: 100%;
   padding: 10px;
