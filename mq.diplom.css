@@ -995,7 +995,7 @@ h2.top.product_imgbox {
   height: 38px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("/svg/form-arrows.svg");
+  background-image: url("./svg/form-arrows.svg");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: right 5px center;
