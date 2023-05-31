@@ -57,7 +57,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
 }
 
 .header-menu {
@@ -149,10 +148,9 @@ h2.top.trend_right_now {
   text-transform: uppercase;
   border: 3px solid #b59f5b;
   color: #fff;
-  padding: 24px;
-  margin: 0% 0% 2% 1.2%;
-  max-width: 313px;
-  width: 18.5vmax;
+  padding: 1.2%;
+  margin: 0% 1.2% 2% 1.2%;
+  width: 19.8vmax;
 }
 .page {
   margin-top: 4%;
