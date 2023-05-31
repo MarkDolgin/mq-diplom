@@ -107,11 +107,12 @@ h2.top.trend_right_now {
   text-align: center;
   padding-bottom: 3%;
   padding-top: 4%;
+  max-width: 100%;
 }
 .trends {
   box-sizing: border-box;
   display: flex;
-  max-width: 1660px;
+  min-width: 1660px;
 }
 .trend {
   overflow: hidden;
