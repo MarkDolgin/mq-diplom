@@ -154,16 +154,13 @@ h2.top.trend_right_now {
 }
 .page {
   margin-top: 4%;
-  max-width: 70vw;
 }
 
 .page-wrapper {
   box-sizing: border-box;
-  width: 90vw;
   margin-left: 15%;
   padding: 0 15px;
   display: flex;
-  max-width: 1200px;
 }
 
 .main {
