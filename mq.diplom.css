@@ -274,7 +274,6 @@ article.“news” {
 }
 .aside-item:not(:first-child) {
   margin-top: 60px;
-  max-width: fit-content;
 }
 .aside {
   max-width: 25%;
