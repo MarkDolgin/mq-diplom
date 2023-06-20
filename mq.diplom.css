@@ -70,6 +70,10 @@ h3 {
   background-size: 10px;
   background-position: right 13px center;
 }
+.feedback-field:focus {
+  border: 2px solid #b59f5b;
+  outline: none;
+}
 
 .feedback-radio-hint {
   margin-right: 13px;
@@ -106,6 +110,12 @@ h3 {
   font-family: inherit;
   font-size: 13px;
   background-color: #f4f7f6;
+  resize: none;
+}
+
+.feedback-textarea:focus {
+  border: 2px solid #b59f5b;
+  outline: none;
 }
 
 .feedback-button {
@@ -547,6 +557,10 @@ a.news-title-link:hover {
 
 .search-button:hover {
   background-color: #756535;
+}
+input:focus {
+  border: 2px solid #b59f5b;
+  outline: none;
 }
 
 /*SIDE > subscribe*/
@@ -1086,6 +1100,14 @@ a.news-title-link:hover {
   .page-titles,
   .side-titles {
     font-size: 16px;
+  }
+
+  .recent {
+    justify-content: stretch;
+    align-items: center;
+  }
+  .recent-content {
+    width: 100%;
   }
 
   .trends {
