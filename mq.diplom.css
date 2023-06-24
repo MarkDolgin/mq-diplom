@@ -378,7 +378,10 @@ a.news-title-link:hover {
 .news-content-header {
   margin-bottom: 52px;
 }
-
+.news-image {
+  width: 100%;
+  max-width: 380px;
+}
 .news-content-tags {
   list-style-type: none;
   padding-left: 0;
@@ -838,6 +841,11 @@ input:focus {
 
   .news-content {
     margin-left: 30px;
+  }
+}
+@media (min-width: 1199px) and (max-width: 1330px) {
+  .trend-content {
+    padding: 12px 33px;
   }
 }
 
