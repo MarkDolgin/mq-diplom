@@ -830,7 +830,9 @@ input:focus {
   .menu-burger {
     display: none;
   }
-
+  .trend-content {
+    padding: 12px 33px;
+  }
   .trend-card:nth-child(n + 2) {
     margin-left: 4px;
   }
@@ -843,11 +845,6 @@ input:focus {
     margin-left: 30px;
   }
 }
-@media (min-width: 1199px) and (max-width: 1330px) {
-  .trend-content {
-    padding: 12px 33px;
-  }
-}
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .feedback-close {
@@ -856,7 +853,10 @@ input:focus {
     background-size: 28px;
     top: -35px;
   }
-
+  .trend-content {
+    margin: 12px 8px;
+    padding: 6px 17px;
+  }
   .feedback-radio-hint::before {
     width: 26px;
     height: 26px;
@@ -1235,4 +1235,3 @@ input:focus {
     margin-top: 4px;
   }
 }
-
