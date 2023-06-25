@@ -990,6 +990,8 @@ input:focus {
   }
   .trend-tags {
     margin-bottom: 1px;
+  }
+  .trend-tags-link {
     font-size: 1.5vw;
   }
   .trend-title {
