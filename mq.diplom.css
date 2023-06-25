@@ -983,6 +983,19 @@ input:focus {
     margin-top: 50px;
   }
 }
+@media (min-width: 644px) and (max-width: 810px) {
+  .trend-content {
+    margin: 2px 8px;
+    padding: 1px 17px;
+  }
+  .trend-tags {
+    margin-bottom: 1px;
+    font-family: 1.5vw;
+  }
+  .trend-title {
+    line-height: 18px;
+  }
+}
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
   .trends-container {
